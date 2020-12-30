@@ -8,20 +8,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
     background: var(--black);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
-.container{
+header .container{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+
 
 .container .logo{
     padding: 3vh 0 2vh 0; 
@@ -77,6 +79,10 @@ header nav a:hover{
 
 }
 
+.botao a {
+    color: white;
+}
+
 .botao:hover{
     background-color: white;
     color: var(--black);
@@ -89,4 +95,42 @@ header nav a:hover{
 .container {
     margin-left: 15vh;
     margin-right: 15vh;
+}
+.box-filme{
+    width: 100%;
+    height: 100%;
+}
+
+
+.carrosel-filmes {
+    margin-top: 10px;
+}
+.item {
+    background-color: rgba(0,0,0,.60);
+    border-radius: 0 0 15px 15px;
+    border: solid white 1px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+ /* Responsive*/
+
+@media screen and (max-width:900px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+}
+@media screen and (min-width:1000px){
+    .description{
+        width: 50%;
+    }
 }
