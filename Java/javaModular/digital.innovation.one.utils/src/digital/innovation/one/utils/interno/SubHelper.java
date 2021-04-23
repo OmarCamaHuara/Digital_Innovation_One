@@ -1,4 +1,4 @@
-package digital.innovation.one.test.utils.interno;
+package digital.innovation.one.utils.interno;
 
 public class SubHelper implements Operacao {
     @Override
